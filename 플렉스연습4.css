@@ -1,0 +1,48 @@
+        .container{
+            display: flex;
+            flex-direction: column;
+            }
+        
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            }
+        
+        .header{
+            background-color: antiquewhite;
+            padding: 10px;
+            }
+        
+        .menu{
+            background-color: aqua;
+            margin-top: 20px;
+            padding: 10px;
+            }
+        
+        .ad{
+            background-color: azure;
+            flex: 1;
+            height: 100vh;
+            margin-top: 20px;
+            padding: 10px;
+            }
+        
+        .main{
+            background-color: beige;
+            flex: 3;
+            margin-top:20px;
+            padding: 10px;
+            }
+        
+        @media only screen and (max-width: 768px) {
+            .ad{
+                background-color: azure;
+                flex: 1;
+                order: 2;
+                }
+            
+            .main{
+                background-color: beige;
+                flex: 3;
+                order: 1;
+                }
